@@ -1,16 +1,17 @@
 # Mample
 
-**BRING YOUR OWN DISKS** — The Mirage sound without the Mirage experience.
+**BRING YOUR OWN DISKS** — The Mirage sound without the Mirage experience.  The very first Flompler!
 
 - **Formats:** VST3, CLAP, Standalone
 - **Platforms:** Windows, macOS
-- **Status:** Alpha
-- **Version:** 0.0.1
+- **Status:** Alpha (Mostly Functional)
+- **Version:** 0.5.1
 
 ## Links
 
 - [Product page](https://knivesonstrings.com/mample)
 - [Get it on Gumroad](https://knivesonstrings.gumroad.com/l/Mample)
+- [Check it out on KVR](https://www.kvraudio.com/product/mample-by-knives-on-strings)
 
 ## Support
 
