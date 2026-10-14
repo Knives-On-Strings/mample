@@ -1,3 +1,12 @@
+## v0.6.47 — 2026-10-14 — The changelog fills in its gaps
+
+- **No change to either product.** Eleven earlier releases, v0.6.16 to
+  v0.6.26, now have their notes: the macOS 10.15 minimum and disk-image
+  installers, the full fine-tune range, hex parameters shown in hex, Top Key
+  kept to the keyboard, sample-accurate MIDI in Mample, and a fix for notes
+  that could keep sounding after a key was struck twice. A release can no
+  longer be made without its notes.
+
 ## v0.6.46 — 2026-10-13 — A flaky internal test made repeatable
 
 - **No change to either product.** The internal test that compares DSKlusion
@@ -207,6 +216,73 @@ These affect the HLEv2 engine in both Mample and DSKlusion.
   the Mample manual now say so; before, they gave 10.15 for both.
 - **The macOS packager checks it.** Every packaged build is verified to
   start on exactly those versions, for each architecture.
+
+## v0.6.26 — 2026-10-09 — macOS notarizing is more reliable
+
+- **No change to either product.** The macOS notarizing script now clears a
+  leftover disk image and gives up on a stalled upload instead of hanging.
+
+## v0.6.25 — 2026-10-09 — Notes land on time; a re-struck key releases cleanly
+
+- **Fixed: in HLEv2, striking a key again before releasing it could leave a
+  note sounding.** Overlapping notes on the same key, a doubled controller,
+  or re-striking a key the sustain pedal holds could leave one voice held
+  until another note took it over. Every note now releases.
+
+- **MIDI now plays at the exact sample the host sends it.** Notes, note-offs,
+  pitch bend and controllers used to take effect at the start of the audio
+  block they arrived in -- up to about 12 ms early at a 512-sample buffer.
+  They now land where the host placed them, so timing is tight and releases
+  no longer sound early.
+
+## v0.6.24 — 2026-10-09 — Top Key keeps to the keyboard
+
+- **P72 Top Key now ranges 1-61, the Mirage's own panel range.** It used to
+  accept 0-127, values no Mirage disk can hold; the default is now 61.
+
+## v0.6.22 — 2026-10-08 — Fine tune uses its full range
+
+- **P68 Fine Tune now uses the Mirage's own 0-255 range**, shown in hex as
+  on the Mirage, from disk to sound to save. It was a 0-99 value converted
+  on load, which lost detail and could write the wrong byte back. Factory
+  sounds play at the same pitch as before.
+
+## v0.6.21 — 2026-10-08 — Internal tooling
+
+- **No change to either product.** Shared project tooling was brought up to
+  date.
+
+## v0.6.20 — 2026-10-08 — An up-to-date Mample manual
+
+- **The manual describes the Mample that ships today**: requirements
+  (Windows, or macOS 10.15 Catalina and later on Apple Silicon or Intel),
+  the Windows installer, the macOS disk image and package, and how to
+  uninstall.
+
+## v0.6.19 — 2026-10-08 — The Mac installer comes on a disk image
+
+- **On macOS, each product now ships as a signed, notarized disk image.** It
+  holds the installer package, a read-me, the licence texts and an
+  uninstaller, and Mample's also holds its manual.
+- The licence agreement no longer opens with an internal draft note.
+
+## v0.6.18 — 2026-10-07 — Contact addresses
+
+- **The licence agreement and the Mample manual give our
+  knivesonstrings.com addresses**: legal@, privacy@, support@ and hello@.
+  Bug reports still go to the GitHub issues.
+
+## v0.6.17 — 2026-10-07 — Both products run on macOS 10.15 Catalina
+
+- **The macOS minimum is now 10.15 Catalina** on Intel Macs (Apple Silicon
+  Macs start at macOS 11). It was macOS 11 Big Sur. Keep Safari up to date on
+  10.15: the interface uses its web engine.
+
+## v0.6.16 — 2026-10-07 — Internal tooling
+
+- **No change to how either product works.** Shared project tooling was
+  brought up to date, and the Mample manual gives hello@knivesonstrings.com
+  for general questions.
 
 ## v0.6.14 — 2026-10-05 — A Windows installer for Mample, and no ASIO
 
