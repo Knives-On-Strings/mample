@@ -2,22 +2,10 @@
 
 - **Improved:** Release notes are shorter and tagged New, Improved or Fixed, so they are quicker to scan.
 
-## v0.6.47 — 2026-10-14 — Release notes backfilled
-
-- Internal improvements.
-
-## v0.6.46 — 2026-10-13 — Internal improvements
-
-- Internal improvements.
-
 ## v0.6.45 — 2026-10-13 — Validation passes; sample loading fixed
 
 - **Improved:** Passes clap-validator and pluginval (strictest level) in both products.
 - **Fixed:** Pitch Bend's displayed value drifted when a host stored it as text.
-
-## v0.6.44 — 2026-10-13 — Internal improvements
-
-- Internal improvements.
 
 ## v0.6.43 — 2026-10-13 — Damaged disk images flagged
 
@@ -51,10 +39,6 @@
 - **New:** Program names can be edited in the disk library.
 - **Improved:** The loaded sound shows your own names, so a sound renamed in DSKlusion reads the same in Mample.
 
-## v0.6.38 — 2026-10-11 — Internal improvements
-
-- Internal improvements.
-
 ## v0.6.37 — 2026-10-11 — Mix mode and Keyboard Balance
 
 - **Fixed:** In HLEv2 with mix mode on (P28), each key plays the Mirage's wavesample pair, fixing piano and MELPRO sounds.
@@ -86,27 +70,15 @@
 - **Fixed:** In HLEv2, the second layer keeps its vibrato and pitch bend through the release.
 - **Fixed:** In HLEv2, LFO edits apply from the next note, as on the Mirage.
 
-## v0.6.32 — 2026-10-10 — Internal improvements
-
-- Internal improvements.
-
 ## v0.6.31 — 2026-10-10 — VOLUME knob on older macOS
 
 - **Improved:** If the controls can't load, the knob shows "Volume unavailable".
 - **Fixed:** The VOLUME knob works on older macOS versions (Knives-On-Strings/mample#3).
 - **Fixed:** The VOLUME knob no longer jumps on first touch.
 
-## v0.6.30 — 2026-10-10 — Safe LLE sample loads
-
-- Internal improvements.
-
 ## v0.6.29 — 2026-10-10 — macOS minimum per Mac
 
 - **Improved:** The installers and Mample manual state the macOS minimum: 10.15 on Intel Macs, 11 on Apple Silicon.
-
-## v0.6.26 — 2026-10-09 — Internal improvements
-
-- Internal improvements.
 
 ## v0.6.25 — 2026-10-09 — Tighter MIDI; clean releases
 
@@ -121,10 +93,6 @@
 ## v0.6.22 — 2026-10-08 — Fine tune uses its full range
 
 - **Fixed:** P68 Fine Tune uses the Mirage's full 0–255 range, shown in hex. Factory sounds keep their pitch.
-
-## v0.6.21 — 2026-10-08 — Internal tooling
-
-- Internal improvements.
 
 ## v0.6.20 — 2026-10-08 — Mample manual updated
 
