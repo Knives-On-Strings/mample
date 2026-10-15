@@ -1,3 +1,26 @@
+## v0.6.53 — 2026-10-15 — LED-font readouts
+
+- **Improved:** The About box credits the DSEG7 Classic typeface.
+
+- **Improved:** The CUT, RES, DET and BAL readouts use a true 7-segment LED font, with the unlit segments faintly visible.
+
+## v0.6.52 — 2026-10-15 — Waveforms fit at every window scale
+
+- **Fixed:** After changing Window Scale, the waveform panels and envelope graph no longer spill over each other or under the keyboard.
+
+## v0.6.51 — 2026-10-14 — Envelope and filter switches move to Settings
+
+- **Improved:** The envelope and filter on/off switches moved from the main window to Settings → Sound, giving the envelope graph more room.
+- **Improved:** A switched-off envelope or filter shows as a thin, faded trace in the envelope graph.
+
+## v0.6.50 — 2026-10-14 — Favourites, tags and LED readouts
+
+- **New:** Star a sound half in the disk browser and show only your ★ Favourites; stars are yours alone, shared between Mample and DSKlusion, and never exported.
+- **New:** The catalog now tags 429 sounds by type (keys, strings, brass & wind, synth, percussion, voice), so you can filter the factory and third-party libraries by tag.
+
+- **Improved:** The CUT, RES, DET and BAL readouts show on Mirage-style 7-segment LEDs.
+- **Improved:** A "Program:" line says which half (Lower or Upper) the readouts and envelope graph show.
+
 ## v0.6.48 — 2026-10-14 — Shorter release notes
 
 - **Improved:** Release notes are shorter and tagged New, Improved or Fixed, so they are quicker to scan.
