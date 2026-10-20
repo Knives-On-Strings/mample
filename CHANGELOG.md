@@ -1,3 +1,103 @@
+## v0.6.73 — 2026-10-20 — Stereo, a tidier browser, and ASIO
+
+- **New:** The disk browser can hide duplicate disks: identical copies show once, with a count.
+- **New:** Tags in one set of chips, in both views: pick a family (Keys, Strings, Brass & wind, Synth, Percussion, Voice) to see the tags inside it.
+- **New:** Disks and sounds with no tags get automatic tags from their names. They look dimmer, and you can remove any of them.
+- **New:** The browser remembers its view, filters and last disk.
+- **New:** The Windows Standalone apps support ASIO audio drivers.
+- **Improved:** The library is no longer rescanned after a DAW restart; only new or changed disks are read.
+- **Improved:** On Windows, "Install for me only" installs for the signed-in user and no longer asks for administrator rights.
+- **Fixed:** A disk of your own named like a factory disk no longer shows that factory disk's names and sounds.
+- **Fixed:** Your labels stay with a disk when you save over it.
+- **Fixed:** Eight factory sound names now close their quotes, as in Low Voices "AH".
+
+- **New:** A STEREO button sends each voice to the left or right output, as on a DSK-1 Mirage. MONO stays the default.
+- **New:** A new Mample logo in the header and the About box, and a thank-you to our beta testers.
+- **New:** In the Sound view, identical sounds show as one row with a count; open it to see, audition or load each copy.
+- **Improved:** Report an Issue sits with the Website, Manual and GitHub links in About.
+- **Improved:** The Sound view's HALF and TYPE filters share one line.
+- **Fixed:** The voice readout no longer shows more than 8 during an audition; it reads "n/8" with a dimmer "+k" for the audition's voices.
+
+ASIO is a trademark of Steinberg Media Technologies GmbH, registered in Europe and other countries.
+
+## v0.6.71 — 2026-10-20 — DSKlusion Windows installer
+
+- **Improved:** The on-screen keyboard, voice count and zone lights redraw only when something changes, instead of thirty times a second while idle.
+
+## v0.6.70 — 2026-10-20 — Parameter ranges match the Mirage
+
+- **Fixed:** Pitch Bend Range (P22) stops at 12, as on the Mirage. A session saved with a higher value reopens at 12.
+- **Fixed:** A 2-sided HFE disk image loads from the right tracks instead of showing as damaged.
+
+## v0.6.68 — 2026-10-19 — The Mirage's own digits; the panel reads back setup values
+
+- **Improved:** The data window's 7-segment digits now match the Mirage's own display: its 9 is open at the bottom, and its 7 has no left upright.
+
+## v0.6.67 — 2026-10-19 — Lower and Upper tabs
+
+- **New:** LOWER and UPPER tabs above the info panel choose which half the disk, sound, wavesample, parameter and envelope readouts show.
+- **Fixed:** A half you unload no longer leaves its old waveform on screen.
+
+## v0.6.64 — 2026-10-18 — Moved disks found; the window follows a restore
+
+- **Improved:** A project finds a disk you moved to another folder of your library under the same name, even a very large one, and never waits more than half a second for a disk it can't reach.
+- **Fixed:** When the host restores a session or preset with the window open, the window updates at once: sound and disk names (including [MISSING]), loaded markers, and the audition banner.
+
+## v0.6.63 — 2026-10-18 — Wrong-sized disk images are refused
+
+- **Fixed:** A disk image file that is too short or too long to be a whole Mirage disk no longer loads, and the status line says so, giving its size.
+
+## v0.6.62 — 2026-10-18 — Auditions show on the keyboard
+
+- **Fixed:** While you audition a sound, the on-screen keyboard and the voice count show the notes it plays, including one in each key zone, even with nothing loaded.
+- **Fixed:** A sustain pedal already held when you start an audition now holds its notes, and releasing it releases them.
+
+## v0.6.61 — 2026-10-18 — Each half keeps its own disk
+
+- **Improved:** A project finds a disk you moved or renamed in your library by its sound (in a very large library, load it again if it is not found), and saving another sound to the same disk no longer marks a half [MISSING]; a half whose sound is nowhere shows [MISSING] and the other half still loads.
+- **Fixed:** Loading a sound from another disk no longer replaces the other half's sound or changes the instrument's master tune and bend range; these come from the first disk loaded and are saved with the project.
+
+## v0.6.59 — 2026-10-18 — Audition pitch fixed
+
+- **Fixed:** Auditioning an Upper sound no longer plays some keys two octaves too high.
+
+## v0.6.58 — 2026-10-17 — Browse by sound, audition before loading, and update checks
+
+- **Improved:** Every network request Mample makes now carries the same fixed headers, naming only KosNet and its version, never your DAW, operating system or language.
+
+- **New:** Browse by Sound: the disk browser can list every sound in your library, grouped by type, with tag chips, a Lower / Upper / Both filter, search and ★ Favourites.
+- **New:** Audition a sound before loading it: ▶ plays one note in each of its key zones, then keeps the sound playable in its own half until you LOAD it, audition another or cancel. Space auditions a sound, Enter loads it, Escape ends the preview.
+- **New:** Mample can tell you when a newer version is out. Choose how often it checks in Settings → Privacy → Check for updates (Daily, Weekly, Monthly or Never; Weekly by default), or press Check now. A quiet "Update available" notice in the header links to the changelog. The check sends only the product name, and Mample never downloads or installs anything itself.
+- **New:** IMPORT MY LABELS… beside EXPORT in the disk browser merges a labels file from Mample or DSKlusion into yours: its names and tags replace yours where both have one, nothing is deleted, and your labels are backed up first.
+- **New:** Unload Upper and Unload Lower: right-click a waveform panel or the keyboard to empty one half without loading another.
+- **Fixed:** Loading or unloading a sound while Mample was playing could glitch or crash; a note held on the other half now plays on through a load of the same disk.
+- **Fixed:** Right-clicking the waveforms or keyboard no longer offers a "Reload" item that reloaded the interface.
+
+## v0.6.57 — 2026-10-17 — A volume readout, and held loops that follow their loop point
+
+- **New:** Hovering, dragging or focusing the VOLUME knob shows its level, for example "75 % −7.5 dB". Double-click returns it to the default, and the arrow keys adjust it once it has focus.
+- **Improved:** The disk catalog names London 1's six drum kits and titles London 1 and 3.
+- **Fixed:** A wavesample whose loop switch is stored as any value other than 0 or 1 now loops, as on the Mirage, instead of playing once (Factory Disk OS 3.2, Upper sound 2, wavesample 6).
+
+- **Improved:** The manual explains that the disk library is incomplete and how to add missing names and tags.
+
+## v0.6.56 — 2026-10-17 — Saving sounds in HLEv2; Mample's default volume is 75%
+
+- **Improved:** The master volume's soft clipping is smooth at both limits, and its added colour is the NE570's own 0.4%, so loud sounds distort far less.
+- **Improved:** The disk catalog adds 28 disks (K-Muse L.A., Sound Cells, Minotaur and the self-oscillating filter OS) and names 122 sounds, including K-Muse London 4.
+
+- **Improved:** **Breaking change:** the default volume is now 75% instead of 100%, to leave headroom for loud sounds and chords. Projects and standalone sessions saved by any earlier version open at 75%, whatever volume they had; once saved in this version, your volume is kept. A tick on the volume knob marks 75%.
+- **Improved:** New Mample windows open at the window scale you last chose on this computer. Saved projects keep their own scale.
+- **Improved:** The disk browser reopens at the disk you last used, or at the disk that is loaded, instead of the top of the list.
+
+## v0.6.55 — 2026-10-16 — MIDI diagnostic trace in Mample
+
+- **New:** Settings → MIDI / Audio → Diagnostics has a MIDI diagnostic trace. When switched on, it records the MIDI your host sends and what Mample does with each note to a text file you can send with a bug report. It is off every time Mample opens.
+
+## v0.6.54 — 2026-10-16 — Wheels on any MIDI channel
+
+- **Fixed:** The on-screen pitch and mod wheels, and automation of them, work again when Receive Channel is set to anything other than Omni or 1.
+
 ## v0.6.53 — 2026-10-15 — LED-font readouts
 
 - **Improved:** The About box credits the DSEG7 Classic typeface.
