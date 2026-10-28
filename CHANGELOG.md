@@ -1,3 +1,57 @@
+## v0.7.4 — 2026-10-27 — HLEv2 panel display fixes
+
+- **Fixed:** The licence page in both installers shows the text in paragraphs, instead of breaking every line at 80 columns.
+
+- **Improved:** The WIDTH knob is marked M and S at the two ends of its sweep.
+- **Fixed:** Mono shows on / oF, as the Mirage shows a switch, instead of 01 / 00.
+
+## v0.7.3 — 2026-10-26 — Mample's KoS look, Hi-viz theme, redrawn browsers
+
+- **New:** Both disk browsers get a quieter look: Graphite keys instead of amber, a LIBRARY (n) count, and a Current: line.
+- **New:** A ☰ menu in the browsers holds Hide duplicates and label export and import. Hide duplicates is turned on for everyone in this version, even if you had turned it off; switch it off again if you like.
+- **New:** Recent shows the last 10 disks you loaded, kept across restarts.
+- **New:** The header has a stereo VU meter.
+- **New:** The waveform screens light each wavesample while it plays. Under MASOS or Sound Process in the LLE, no wavesamples light.
+- **Improved:** Rescan is now an icon, and tags are one flat list you can filter by.
+- **Improved:** Settings → Appearance is laid out as a grid in both products.
+- **Improved:** The tours are updated and show once more.
+- **Improved:** The User Library now lives inside the Mirage_Disks folder, and both products share its protect and rename records.
+- **Improved:** Disk catalogue 2.8: corrected disk names now reach existing installs.
+- **Improved:** Release packages are named with their platform and architecture, such as win-x64 or mac-universal.
+
+- **New:** The KoS look: a header like DSKlusion's, with matching panels and screens.
+- **New:** A WIDTH knob replaces MONO / STEREO: 0 is mono, 1 the DSK-1 spread. A v0.7.2 project saved in STEREO reopens at mono.
+- **New:** Dots follow the playing notes along the envelope. Settings → Appearance → Show playing notes turns them off.
+- **New:** A Parameters view beside the waveforms (Waveforms | Program | Wavesamples) shows the program and wavesamples, read-only.
+- **New:** Settings → Sound offers Render quality, which is remembered.
+- **Improved:** The Sound view is one list sorted by name.
+
+## v0.7.2 — 2026-10-23 — DSKlusion's new look, tours and a faster browser
+
+- **New:** The disk browser opens at once with the last list it showed, then refreshes in place.
+- **New:** A Rescan button in the disk browser re-reads your library on demand.
+- **Improved:** Both products keep sound disks in one shared folder, Documents\KnivesOnStrings\Mirage_Disks, by default.
+
+- **Improved:** The tour now shows how to browse by disk or by sound, and appears once more so you can see it.
+- **Fixed:** The CUT / RES / DET / BAL / MONO readout row no longer runs past the edge of its panel.
+
+## v0.7.1 — 2026-10-23 — Mono mode, voice reuse, LLE filter tuning
+
+- **New:** Mono mode (P29) plays as on the Mirage: one voice per keyboard half, the lowest held key wins, and a lower key changes pitch without restarting the note (legato).
+- **Improved:** A key struck again while its note still rings restarts on that same voice, as the Mirage does.
+- **Improved:** Mac and Windows now render identically.
+- **Fixed:** Resonance (P37) now matches DSKlusion's LLE engine, so resonant sounds are stronger than before.
+
+- **New:** A MONO readout beside CUT / RES / DET / BAL shows when a sound plays in mono mode.
+
+## v0.7.0 — 2026-10-22 — The Mirage's real clock, and HLEv2 matched to it
+
+- **New:** A Note Timing setting: Tight (the default, unchanged) or Authentic, which adds the Mirage's own note-on and note-off delays.
+- **Improved:** Voices are allocated as on the Mirage: a released, still-ringing voice is reused before a held note is cut, and a held one-shot frees its voice when its sample ends.
+- **Improved:** Two-layer sounds start their second layer with the Mirage's own small delay, so velocity responds as on the hardware.
+- **Improved:** Envelope and LFO rates follow the Mirage's measured clock, about 1–2% slower than before.
+- **Fixed:** Envelope decays and releases follow the Mirage's ROM. Long tails were up to about a third too long.
+
 ## v0.6.73 — 2026-10-20 — Stereo, a tidier browser, and ASIO
 
 - **New:** The disk browser can hide duplicate disks: identical copies show once, with a count.
