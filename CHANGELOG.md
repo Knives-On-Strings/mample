@@ -1,3 +1,14 @@
+## v0.7.8 — 2026-11-06 — The side block, macros, sampling and the LLE audio fix
+
+- **New:** Settings → Advanced → Save debug dump, in both products, records what the engine was doing: press it while a problem is happening and send us the file privately, since it can hold the sounds of the disk you were playing (DSKlusion's dump holds sample RAM; a Mample dump holds only the last 0.2 s of its output).
+- **Improved:** Settings has six tabs: Sound, Disks, MIDI / Audio, Appearance, Privacy and Advanced.
+- **Improved:** The update notice is a red dot on the About button, and About names the update.
+- **Improved:** The eject key has left the header; the disk name opens the disk browser, as it already did.
+- **Fixed:** A project saved with an out-of-range window scale now reopens at the nearest allowed size.
+- **Fixed:** On macOS, the disk library's lock file is hidden instead of showing in the Mirage_Disks folder.
+- **Fixed:** A whole-number parameter set from your host no longer lands one step low.
+- **Fixed:** A host preparing audio again at the same or a smaller block size no longer risks a glitch.
+
 ## v0.7.4 — 2026-10-27 — HLEv2 panel display fixes
 
 - **Fixed:** The licence page in both installers shows the text in paragraphs, instead of breaking every line at 80 columns.
